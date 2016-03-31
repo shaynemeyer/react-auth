@@ -1,4 +1,5 @@
 # NodeJS JWT Authentication sample
+[Sample](https://github.com/auth0/nodejs-jwt-authentication-sample)
 
 This is a NodeJS API that supports username and password authentication with JWTs and has APIs that return Chuck Norris phrases. How awesome is that?
 
@@ -53,7 +54,7 @@ It returns a String with a Random quote from Chuck Norris. It doesn't require au
 
 #### GET `/api/protected/random-quote`
 
-It returns a String with a Random quote from Chuck Norris. It requires authentication. 
+It returns a String with a Random quote from Chuck Norris. It requires authentication.
 
 The JWT must be sent on the `Authorization` header as follows: `Authorization: Bearer {jwt}`
 
