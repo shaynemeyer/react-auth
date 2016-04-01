@@ -12,10 +12,11 @@ let createStoreWithMiddleware = applyMiddleware(thunkMiddleware, api)(createStor
 
 let store = createStoreWithMiddleware(quotesApp);
 
-let rootElement = document.getElementsById('root');
+let rootElement = document.getElementById('root');
 
-render{
+render(
   <Provider store={store}>
     <App />
-  </Provider>, rootElement 
-}
+  </Provider>,
+  rootElement
+);
